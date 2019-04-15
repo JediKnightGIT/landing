@@ -29,6 +29,8 @@ img
 	background-color: $primary
 	color: #fff
 	+bold
+	&:hover
+		cursor: pointer
 	&-fitting 
 		color: $primary
 		background-color: #fff
@@ -40,16 +42,18 @@ img
 		height: 30px
 		width: 30px
 		border: none
+
 .bg-secondary
 	background: $bg-secondary
 .input
 	height: 80px
 	padding-left: 30px
 	border: 1px solid #ddd
-.checkbox
+input[type="checkbox"]
 	display: none
 	&:checked + label:before
-		background: $primary
+			background: $primary
+.checkbox
 	&-label
 		display: flex
 		align-items: center
@@ -64,8 +68,10 @@ img
 			margin-right: 20px
 
 @media (max-width: 576px)
-	.button-o
+	.button 
 		font-size: 10px
+		&-o
+			font-size: 10px
 	.section 
 		padding: 60px 0
 		&-title 
